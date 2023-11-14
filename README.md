@@ -22,3 +22,8 @@ def factor(n:int)->Generator[int,None,None]:
         yield from factor(factor2)
 
 ```
+
+Usage:
+```python
+print(list(factor(500)))
+```
