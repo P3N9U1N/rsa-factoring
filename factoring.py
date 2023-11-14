@@ -1,6 +1,3 @@
-# rsa-factoring
-RSA and number factoring, can be used for solving CTF challenges. It is fast enough for up to 64 bit numbers.
-```python
 import math
 from typing import Generator
 
@@ -21,4 +18,4 @@ def factor(n:int)->Generator[int,None,None]:
         yield from factor(factor1)
         yield from factor(factor2)
 
-```
+
